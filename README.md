@@ -65,9 +65,8 @@ Portfolio/
 
 ## 📸 Preview
 
-![Portfolio Preview](assets/preview.png)
+![Portfolio Preview](assets/preview.jpg)
 
-> Replace `assets/preview.png` with an actual screenshot of your portfolio.
 
 ---
 
