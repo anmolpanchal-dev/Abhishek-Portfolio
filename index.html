@@ -25,8 +25,133 @@
     <link rel="stylesheet" href="style/card.css" />
     <link rel="stylesheet" href="style/about.css" />
     <link rel="stylesheet" href="style/experience.css" />
+    <link rel="stylesheet" href="style/loader.css" />
+    <link rel="stylesheet" href="style/footer.css" />
   </head>
   <body>
+    <!--=========================
+        PREMIUM LOADER
+==========================-->
+
+<!-- ======================================
+            PREMIUM INTRO LOADER
+======================================= -->
+
+<div id="loader">
+
+    <!-- Animated Background -->
+    <div class="loader-bg">
+
+        <div class="noise"></div>
+
+        <div class="gradient"></div>
+
+        <div class="grid"></div>
+
+        <div class="scan"></div>
+
+    </div>
+
+
+    <!-- Floating Particles -->
+    <div class="particles">
+
+        <!-- JS will generate particles -->
+
+    </div>
+
+
+    <!-- Center Stage -->
+    <div class="loader-stage">
+
+        <!-- Glow -->
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+
+
+        <!-- Energy Rings -->
+
+        <div class="rings">
+
+            <span class="ring outer"></span>
+
+            <span class="ring middle"></span>
+
+            <span class="ring inner"></span>
+
+        </div>
+
+
+        <!-- Logo -->
+
+        <div class="logo-wrapper">
+
+            <div class="logo-border"></div>
+
+            <div class="logo">
+
+                <h1>AP</h1>
+
+            </div>
+
+        </div>
+
+
+        <!-- Energy Dots -->
+
+        <div class="orbit">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Content -->
+
+    <div class="loader-bottom">
+
+        <p class="loader-title">
+
+            Building Premium Experience
+
+        </p>
+
+        <div class="progress">
+
+            <div class="progress-track">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+            <span class="progress-text">
+
+                0%
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Decorative Light -->
+
+    <div class="light-left"></div>
+
+    <div class="light-right"></div>
+
+</div>
+
+
     <!-- Navbar -->
     <nav id="navbar">
       <div id="name">
@@ -38,13 +163,12 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#">Achievements</a>
         <a class="contact-btn2">Contact</a>
 
-        <button class="connect-btn">
-          <i class="ri-user-line"></i>
-          Let's Connect
-        </button>
+        <button class="connect-btn" onclick="openResume()">
+  <i class="ri-file-user-line"></i>
+  Resume
+</button>
       </div>
 
       <div id="menu-btn">
@@ -141,10 +265,10 @@
             LinkedIn
           </a>
 
-          <a href="#">
-            <i class="bx bxl-whatsapp"></i>
-            WhatsApp
-          </a>
+         <a href="mailto:abhipanchal1125@gmail.com?subject=Portfolio%20Inquiry">
+    <i class='bx bx-envelope'></i>
+    mail
+</a>
         </div>
       </div>
     </div>
@@ -380,6 +504,119 @@
 
 </section>
 
+<!-- Footer -->
+
+
+<footer class="footer">
+
+    <div class="footer-bg-text">
+        ABHISHEK
+    </div>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>Abhishek Panchal</h2>
+
+            <p>
+                Retail Operations Professional dedicated to customer
+                excellence, leadership and operational efficiency.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#hero">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#experience">Experience</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 9205816821
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                abhipanchal1125@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                India
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-social">
+
+        <a href="https://www.linkedin.com/in/abhishek-panchal-64ab8b1a3?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://www.instagram.com/abhi_panchal4205/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="mailto:abhipanchal1125@gmail.com?subject=Portfolio%20Inquiry">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Abhishek Panchal.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+    <button class="scroll-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+</footer>
+<!-- Resume Popup -->
+<div class="resume-popup" id="resumePopup">
+
+  <div class="resume-container">
+
+    <span class="resume-close" onclick="closeResume()">
+      &times;
+    </span>
+
+    <h2>My Resume</h2>
+
+    <iframe 
+      src="file/Abhishek_PanchalCV.pdf">
+    </iframe>
+
+  </div>
+
+</div>
 
 
 
@@ -388,5 +625,7 @@
     <script src="script/card.js"></script>
     <script src="script/about.js"></script>
     <script src="script/experience.js"></script>
+    <script src="script/loader.js"></script>
+    <script src="script/footer.js"></script>
   </body>
 </html>

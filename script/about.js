@@ -90,3 +90,13 @@ qualityCards.forEach((card)=>{
     });
 
 });
+
+
+function openResume(){
+    document.getElementById("resumePopup").style.display="flex";
+}
+
+
+function closeResume(){
+    document.getElementById("resumePopup").style.display="none";
+}
