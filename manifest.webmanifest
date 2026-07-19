@@ -1,0 +1,18 @@
+{
+  "name": "Abhishek Panchal Portfolio",
+  "short_name": "Portfolio",
+  "description": "Professional portfolio of Abhishek Panchal, an experienced Retail Operations & Sales Professional.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07160F",
+  "theme_color": "#07160F",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/man.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
